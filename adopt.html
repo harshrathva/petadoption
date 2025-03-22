@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/98e3fd0e-d57e-4aad-9c50-58981e5c0a91.webp') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(1.2) contrast(1.1); /* Enhances photo clarity */
+    color: #333;
+}
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            padding: 20px;
+           /* background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for better readability */
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #01060c;
+        }
+        h1 {
+            text-align: center;
+            color: #020508;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #02060a;
+        }
+        input[type="text"], input[type="email"], input[type="contact"], input[type="date"], select, textarea {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #02080b;
+            border-radius: 5px;
+            background-color: #E6F7FF;
+            color: #333;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, input[type="contact"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+            border-color: #090a0b;
+            outline: none;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            background: linear-gradient(to right, #fafcfe, #000105);
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(to right, #070a0d, #070b0f);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Adoption Form</h1>
+        <form action="#" method="post">
+            <label for="name"><h3>Full Name</h3></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"><h3>Email</h3></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact"><h3>Contact Number</h3></label>
+            <input type="contact" id="contact" name="contact" required>
+
+            <label for="dob"><h3>Date of Birth</h3></label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender"><h3>Gender</h3></label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="address"><h3>Address</h3></label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="reason">Why do you want to adopt?</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

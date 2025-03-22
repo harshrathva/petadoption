@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #ff7f50;
+      padding: 20px 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
+
+    .navbar .logo h1 {
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .hero {
+      background: url('images/98e3fd0e-d57e-4aad-9c50-58981e5c0a91.webp') no-repeat center center/cover;
+      color: rgb(7, 0, 0);
+      padding: 200px 150px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background-color: #ff7f50;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #ff6347;
+    }
+
+    .pets-section {
+      text-align: center;
+      padding: 50px 30px;
+    }
+
+    .pets-section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .pets-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .pet-card {
+      background-color: rgb(208, 195, 183);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 220px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .pet-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .pet-card h3 {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    .pet-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .adopt-button {
+      background-color: #f1ae4b;
+      color: rgb(99, 96, 93);
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .adopt-button:hover {
+      background-color: #ff6347;
+    }
+
+    .process-section {
+      background-color: #ef9b12;
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .process-section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .process-steps {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .step {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .step h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #ff7f50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>JusPets</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="adopt.html">Adopt</a></li>
+          <li><a href="#process">How to Adopt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="adopt" class="hero">
+    <div class="hero-content">
+      <h2>Find Your New Best Friend</h2>
+      <p>Browse through hundreds of pets looking for loving homes!</p>
+      <a href="#featured" class="cta-button">Browse Pets</a>
+    </div>
+  </section>
+
+  <section id="featured" class="pets-section">
+    <h2>Featured Pets</h2>
+    <div class="pets-container">
+      <div class="pet-card">
+        <img src="images\images-22.jpg" alt="Pet 1">
+        <h3>Max</h3>
+        <p>Breed: Labrador</p>
+        <p>Age: 5 months</p>
+        <a href="adopt.html" class="adopt-button">Adopt Me</a>
+      </div>
+      <div class="pet-card">
+        <img src="images/images-15.jpeg" alt="Pet 2">
+        <h3>Whiskers</h3>
+        <p>Breed: Persian Cat</p>
+        <p>Age: 2 years</p>
+        <a href="adopt.html" class="adopt-button">Adopt Me</a>
+      </div>
+      <div class="pet-card">
+        <img src="images/images-6.jpeg" alt="Pet 2">
+        <h3>Flufy</h3>
+        <p>Breed: coton de tulear</p>
+        <p>Age: 1 years</p>
+        <a href="adopt.html" class="adopt-button">Adopt Me</a>
+      </div>
+      <div class="pet-card">
+        <img src="images\images-3.jpeg" alt="Pet 2">
+        <h3>Oggy</h3>
+        <p>Breed: Pug</p>
+        <p>Age: 2 years</p>
+        <a href="adopt.html" class="adopt-button">Adopt Me</a>
+      </div>
+      <div class="pet-card">
+        <img src="images/images-16.jpeg" alt="Pet 2">
+        <h3>Togepi</h3>
+        <p>Breed: Chinchilla Persian Cat</p>
+        <p>Age: 10 months</p>
+        <a href="adopt.html" class="adopt-button">Adopt Me</a>
+      </div>
+      <!-- Add more pet cards here -->
+    </div>
+  </section>
+
+  <section id="process" class="process-section">
+    <h2>How to Adopt</h2>
+    <div class="process-steps">
+      <div class="step">
+        <h3>Step 1</h3>
+        <p>Browse through available pets.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2</h3>
+        <p>Contact the pet parent for more details.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3</h3>
+        <p>First fill the adoption form and after Meet and adopt your new pet!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JusPets. All rights reserved.</p>
+  </footer>
+</body>
+</html>
