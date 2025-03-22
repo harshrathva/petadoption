@@ -46,7 +46,8 @@
     }
 
     .hero {
-      background: url('images/98e3fd0e-d57e-4aad-9c50-58981e5c0a91.webp') no-repeat center center/cover;
+      background: url('images/images-24.webp') no-repeat center center/cover;
+      background-size: cover;
       color: rgb(7, 0, 0);
       padding: 200px 150px;
       text-align: center;
@@ -88,6 +89,7 @@
 
     .pets-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
     }
@@ -104,7 +106,8 @@
 
     .pet-card img {
       width: 100%;
-      height: 150px;
+      max-width: 220px;
+      height: auto; /* Maintains aspect ratio */
       object-fit: cover;
       border-radius: 8px;
     }
@@ -170,6 +173,18 @@
       padding: 20px 0;
       text-align: center;
     }
+
+    @media (max-width: 768px) {
+      .pets-container {
+        flex-direction: column; /* Stack cards on smaller screens */
+        gap: 10px;
+      }
+
+      .pet-card {
+        width: 90%; /* Adjust width for small screens */
+        margin: 0 auto; /* Center on smaller screens */
+      }
+    }
   </style>
 </head>
 <body>
@@ -199,7 +214,7 @@
     <h2>Featured Pets</h2>
     <div class="pets-container">
       <div class="pet-card">
-        <img src="\images\images-22.jpg" alt="Pet 1">
+        <img src="images/images-22.jpg" alt="Pet 1">
         <h3>Max</h3>
         <p>Breed: Labrador</p>
         <p>Age: 5 months</p>
@@ -213,27 +228,26 @@
         <a href="adopt.html" class="adopt-button">Adopt Me</a>
       </div>
       <div class="pet-card">
-        <img src="images/images-6.jpeg" alt="Pet 2">
+        <img src="images/images-6.jpeg" alt="Pet 3">
         <h3>Flufy</h3>
-        <p>Breed: coton de tulear</p>
-        <p>Age: 1 years</p>
+        <p>Breed: Coton de Tulear</p>
+        <p>Age: 1 year</p>
         <a href="adopt.html" class="adopt-button">Adopt Me</a>
       </div>
       <div class="pet-card">
-        <img src="images\images-3.jpeg" alt="Pet 2">
+        <img src="images/images-3.jpeg" alt="Pet 4">
         <h3>Oggy</h3>
         <p>Breed: Pug</p>
         <p>Age: 2 years</p>
         <a href="adopt.html" class="adopt-button">Adopt Me</a>
       </div>
       <div class="pet-card">
-        <img src="https://harshrathva.github.io/petadoption/images/images-16.jpeg" alt="Pet 2">
+        <img src="./images/images-16.jpeg" alt="Pet 5">
         <h3>Togepi</h3>
         <p>Breed: Chinchilla Persian Cat</p>
         <p>Age: 10 months</p>
         <a href="adopt.html" class="adopt-button">Adopt Me</a>
       </div>
-      <!-- Add more pet cards here -->
     </div>
   </section>
 
@@ -250,7 +264,7 @@
       </div>
       <div class="step">
         <h3>Step 3</h3>
-        <p>First fill the adoption form and after Meet and adopt your new pet!</p>
+        <p>Fill the adoption form, meet your new pet, and take them home!</p>
       </div>
     </div>
   </section>
