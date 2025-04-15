@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | JusPets</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: #fff;
+            padding: 30px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #ff7f50;
+        }
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .login-form button {
+            width: 100%;
+            background-color: #ff7f50;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .login-form button:hover {
+            background-color: #ff6347;
+            transform: scale(1.03);
+        }
+        .login-form p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .login-form a {
+            color: #ff7f50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .login-form a:hover {
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to JusPets</h2>
+        <form class="login-form" method="POST" action="index.html"> <!-- Submitting to index.html -->
+            <input type="email" placeholder="Email Address" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </form>
+    </div>
+</body>
+</html>
